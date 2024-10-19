@@ -9,10 +9,9 @@ Currently, two official plugins are available:
 
 
 
-
 ### Project Overview
 
-# Bingo Plus
+### Bingo Plus
 
 ## Overview
 Bingo Plus is a modern web-based Bingo game application built with React. The application allows users to join a game using a game code, fetch Bingo cards, and check for winning cards. The UI is designed for clarity and interactivity, featuring a responsive layout and visually appealing elements.
@@ -60,8 +59,9 @@ Make sure you have the following installed:
 
 ## Code Structure
 The main components of the application are:
-- **BingoApp**: The main component that manages game codes and the state of Bingo cards.
-- **BingoCard**: A component that displays individual Bingo cards, including the grid of numbers, headers, and status information.
+- **App**: The main component that serves as the entry point and calls the `BingoGame` component.
+- **BingoGame**: A component that displays individual Bingo cards, including the grid of numbers, headers, and status information.
+- **StylesCSS**: A separate component for styling the application.
 
 ### Component Details
 - **BingoCard**:
@@ -80,3 +80,4 @@ The application uses CSS for styling. Key styles include:
 - Card background colors and shadows for depth.
 - Grid layout for Bingo numbers.
 - Hover effects for interactive elements.
+
