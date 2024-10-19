@@ -1,0 +1,154 @@
+/* General Styling */
+body {
+  background-color: #f8f9fa; 
+  font-family: 'Roboto', sans-serif; 
+}
+
+.bingo-app {
+  text-align: center;
+  padding: 40px;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+.game-input {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #6c757d;
+}
+
+.join-game-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.join-game-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Bingo Card Styling */
+.bingo-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bingo-card {
+  background-color: #f9f9f9; 
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.bingo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+}
+
+.bingo-card h2 {
+  color: #007bff;
+  margin-bottom: 0;
+  position: absolute; 
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.bingo-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.bingo-header-letter {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007bff;
+  text-align: center;
+}
+
+.bingo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.bingo-cell {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  color: #495057;
+  text-align: center; 
+  border: 2px solid #ced4da; 
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.bingo-cell:hover {
+  background-color: #ced4da;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-section {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.token, .code, .status {
+  font-weight: bold;
+}
+
+.check-win-btn {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-win-btn:hover {
+  background-color: #218838;
+}
+
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
